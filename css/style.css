@@ -51,7 +51,6 @@ body {
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
-    text-transform: uppercase;
     color: #464646;
     background-color: #ffffff;
     padding: 0;
@@ -71,4 +70,44 @@ a {
     padding: 0;
     clip: rect(0,0,0,0);
     overflow: hidden;
+}
+
+.main-header {
+    position: relative;
+    display: flex;
+    max-width: 1160px;
+    color: #000000;
+    background-color: #f7e296;
+    padding: 45px 65px;
+    margin: 40px auto 0;
+}
+
+.main-header .device-logo {
+    position: absolute;
+    top: -20px;
+    left: 65px;
+    display: block;
+    font-size: 36px;
+}
+
+.device-logo .cls-1 {
+    font-family: "Gilroy", "Arial Black", sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+/* Общие стили лого */
+.device-logo:not([href]):hover,
+.device-logo:not([href]):focus,
+.device-logo:not([href]):active{
+    opacity: 1;
+}
+
+.device-logo:hover,
+.device-logo:focus{
+    opacity: 0.6;
+}
+
+.device-logo:active {
+    opacity: 0.3;
 }
