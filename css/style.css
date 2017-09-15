@@ -32,17 +32,17 @@
 
 *, *:before, *:after {
     -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 html {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .content-box-component {
     -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+            box-sizing: content-box;
 }
 
 body {
@@ -72,12 +72,32 @@ a {
     overflow: hidden;
 }
 
+/*Цетрирование основных блоков сайта*/
+.popular-devices-slider,
+.devices-types,
+.services-wrapper,
+.brands,
+.inner-container,
+.footer-wrapper {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.inner-container {
+    display: flex;
+}
+
+.inner-container .left-column,
+.inner-container .right-column {
+    width: 50%;
+}
+
 .main-header {
     position: relative;
     display: flex;
     max-width: 1160px;
     color: #000000;
-    background-color: #f7e296;
+    background-color: rgba(240, 197, 46, 0.5);
     padding: 45px 65px;
     margin: 40px auto 0;
 }
@@ -90,7 +110,7 @@ a {
     font-size: 36px;
 }
 
-.device-logo .cls-1 {
+.device-logo .main-logo {
     font-family: "Gilroy", "Arial Black", sans-serif;
     font-size: 26px;
     font-weight: 800;
@@ -110,4 +130,75 @@ a {
 
 .device-logo:active {
     opacity: 0.3;
+}
+
+.main-header .catalog {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-item .catalog-wrapper {
+    display: flex;
+}
+
+.catalog-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-interface {
+    display: flex;
+}
+
+.user-interface ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-navigation {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popular-devices-slider .slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.devices-types .devices-types-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services {
+    background-color: #e5e5e5;
+}
+
+.brands .brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer {
+    color: #ffffff;
+    background-color: #464646;
+}
+
+.footer-wrapper {
+    display: flex;
 }
