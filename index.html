@@ -15,58 +15,27 @@
             </a>
             <div class="inner-container">
                 <div class="left-column">
-                    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                        <input type="search" name="search" placeholder="Поиск по сайту" required>
-                        <button type="submit">Найти</button>
+                    <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                        <input class="search-field" type="search" name="search" placeholder="Поиск по сайту" required>
+                        <button class="search-btn" type="submit">Найти</button>
                     </form>
-                    <ul class="catalog">
-                        <li class="catalog-item">
-                            <a href="#">Каталог товаров</a>
-                            <div class="catalog-wrapper">
-                                <ul class="catalog-list">
-                                    <li class="catalog-item">
-                                        <a href="#">Виртуальная реальность</a>
-                                    </li>
-                                    <li class="catalog-item">
-                                        <a href="#">Моноподы для селфи</a>
-                                    </li>
-                                    <li class="catalog-item">
-                                        <a href="#">Экшн-камеры</a>
-                                    </li>
-                                </ul>
-                                <ul class="catalog-list">
-                                    <li class="catalog-item">
-                                        <a href="#">Фитнес-браслеты</a>
-                                    </li>
-                                    <li class="catalog-item">
-                                        <a href="#">Умные часы</a>
-                                    </li>
-                                </ul>
-                                <ul class="catalog-list">
-                                    <li class="catalog-item">
-                                        <a href="#">Квадрокоптеры</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
                 <div class="right-column">
                     <div class="user-interface">
-                        <ul class="enter user-interface-current">
+                        <ul class="user-interface-list user-enter user-interface-current">
                             <li>
                                 <a href="#">Войти</a>
                             </li>
                         </ul>
-                        <!--<ul class="info">-->
+                        <!--<ul class="user-interface-list user-info">-->
                         <!--<li class="user-name">-->
                         <!--<a href="#">Валентин Петухов</a>-->
                         <!--</li>-->
-                        <!--<li class="user-exit">-->
+                        <!--<li class="user-interface-list user-exit">-->
                         <!--<a href="#">Выйти</a>-->
                         <!--</li>-->
                         <!--</ul>-->
-                        <ul class="user-block">
+                        <ul class="user-interface-list user-block">
                             <li class="compare">
                                 <a href="#">Сравнить</a>
                             </li>
@@ -76,17 +45,48 @@
                         </ul>
                     </div>
                     <ul class="site-navigation">
-                        <li class="site-navigation-item">
-                            <a href="#">Доставка</a>
+                        <li class="navigation-item">
+                            <a class="navigation-item-link" href="#">Доставка</a>
                         </li>
-                        <li class="site-navigation-item">
-                            <a href="#">Гарантия</a>
+                        <li class="navigation-item">
+                            <a class="navigation-item-link" href="#">Гарантия</a>
                         </li>
-                        <li class="site-navigation-item">
-                            <a href="#">Контакты</a>
+                        <li class="navigation-item">
+                            <a class="navigation-item-link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
+                <ul class="catalog">
+                    <li class="catalog-item-link">
+                        <a class="navigation-item-link" href="#">Каталог товаров</a>
+                        <div class="catalog-wrapper">
+                            <ul class="catalog-list">
+                                <li class="catalog-item">
+                                    <a href="#">Виртуальная реальность</a>
+                                </li>
+                                <li class="catalog-item">
+                                    <a href="#">Моноподы для селфи</a>
+                                </li>
+                                <li class="catalog-item">
+                                    <a href="#">Экшн-камеры</a>
+                                </li>
+                            </ul>
+                            <ul class="catalog-list">
+                                <li class="catalog-item">
+                                    <a href="#">Фитнес-браслеты</a>
+                                </li>
+                                <li class="catalog-item">
+                                    <a href="#">Умные часы</a>
+                                </li>
+                            </ul>
+                            <ul class="catalog-list">
+                                <li class="catalog-item">
+                                    <a href="#">Квадрокоптеры</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </header>
         <main>
@@ -296,13 +296,13 @@
                 <div class="footer-social">
                     <ul class="site-navigation">
                         <li class="site-navigation-item">
-                            <a href="#">Доставка</a>
+                            <a class="navigation-item-link" href="#">Доставка</a>
                         </li>
                         <li class="site-navigation-item">
-                            <a href="#">Гарантия</a>
+                            <a class="navigation-item-link" href="#">Гарантия</a>
                         </li>
                         <li class="site-navigation-item">
-                            <a href="#">Контакты</a>
+                            <a class="navigation-item-link" href="#">Контакты</a>
                         </li>
                     </ul>
                     <ul class="social-list">
@@ -325,17 +325,17 @@
                 </div>
                 <div class="footer-copyright">
                     <div class="user-interface">
-                        <ul class="enter user-interface-current">
+                        <ul class="user-interface-list user-enter user-interface-current">
                             <li>
                                 <a href="#">Войти</a>
                             </li>
                         </ul>
-                        <!--<ul class="info">-->
+                        <!--<ul class="user-interface-list user-info">-->
                         <!--<li class="user-exit">-->
                         <!--<a href="#">Выйти</a>-->
                         <!--</li>-->
                         <!--</ul>-->
-                        <ul class="user-block">
+                        <ul class="user-interface-list user-block">
                             <li class="compare">
                                 <a href="#">Сравнить</a>
                             </li>
